@@ -5,12 +5,10 @@ Notes on power supply circuits for Arduinos, Raspberry Pis, ESP32s, and other 5V
 
 | Image | Description | Chipset | Switching Frequency |  Pot. Adj. | Fixed Adj. | PCB Mountable | Notes | Link |
 | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- |
-| | [CA1235 module](https://www.aliexpress.com/item/1005005231661753.html) | [MP1495](https://www.monolithicpower.com/en/mp1495.html) |  500kHz | -------------- | -------------- | Adjustable voltage output selectable by pot or solder joints. Can't be PCB mounted. | https://www.aliexpress.com/item/1005005231661753.html |
-| | "Mini" | |  -------------- | -------------- | -------------- | Adjustable (need knife to break trace) | https://www.aliexpress.com/item/4000016739581.html |
-| | [MP1584EN](https://www.amazon.co.uk/DollaTek-MP1584EN-Step-Down-Adjustable-Converter/dp/B07DJ5HZ7G) | [MP1584](https://www.monolithicpower.com/en/mp1584.html) | 1.5MHz | -------------- | -------------- | Pot adjustment _only_ |  |
-| | [QSKJ "Fine"](https://www.aliexpress.com/item/32815170131.html) | [MP2315](https://www.openhacks.com/uploadsproductos/datasheet_77.pdf) | 500Khz | | -------------- | -------------- |  |
-
-
+| <img src="https://github.com/playfultechnology/arduino-power/tree/main/images/CA1235.png" /> | [CA1235 module](https://www.aliexpress.com/item/1005005231661753.html) | [MP1495](https://www.monolithicpower.com/en/mp1495.html) |  500kHz | -------------- | -------------- | Adjustable voltage output selectable by pot or solder joints. Can't be PCB mounted. | https://www.aliexpress.com/item/1005005231661753.html |
+| <img src="https://github.com/playfultechnology/arduino-power/tree/main/images/Mini.png" />  | "Mini" | |  -------------- | -------------- | -------------- | Adjustable (need knife to break trace) | https://www.aliexpress.com/item/4000016739581.html |
+| <img src="https://github.com/playfultechnology/arduino-power/blob/main/images/MP1584EN.jpg" />| [MP1584EN](https://www.amazon.co.uk/DollaTek-MP1584EN-Step-Down-Adjustable-Converter/dp/B07DJ5HZ7G) | [MP1584](https://www.monolithicpower.com/en/mp1584.html) | 1.5MHz | -------------- | -------------- | Pot adjustment _only_ |  |
+| <img src="https://github.com/playfultechnology/arduino-power/blob/main/images/QSKJ.jpg" />| [QSKJ "Fine"](https://www.aliexpress.com/item/32815170131.html) | [MP2315](https://www.openhacks.com/uploadsproductos/datasheet_77.pdf) | 500Khz | | -------------- | -------------- |  |
 | | [XL1509](https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_XLSEMI-XL1509-5-0E1_C61063.pdf) | 150kHz |||
 
 
