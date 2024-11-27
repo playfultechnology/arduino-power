@@ -3,12 +3,12 @@ Notes on power supply circuits for Arduinos, Raspberry Pis, ESP32s, and other 5V
 
 
 
-| Image | Description | Chipset | Input V | Output V | Max Current | Switching Frequency |  Pot. Adj. | Fixed Adj. | PCB Mountable | Notes | Link |
-| -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- | -------------- |
-| <img src="https://github.com/playfultechnology/arduino-power/blob/main/images/CA1235.png" /> | [CA1235 module](https://www.aliexpress.com/item/1005005231661753.html) | [MP1495](https://www.monolithicpower.com/en/mp1495.html) | 5-16V | 1.25-5V | 3A | 500kHz | -------------- | -------------- | Adjustable voltage output selectable by pot or solder joints. Can't be PCB mounted. | https://www.aliexpress.com/item/1005005231661753.html |
-| <img src="https://github.com/playfultechnology/arduino-power/blob/main/images/Mini.png" />  | "Mini" | Marked as "DKGAA" | 5-16V | 1.25-5V | 3A | 500kHz | -------------- | -------------- | Adjustable (need knife to break trace). Claims to be 3A,  | https://www.aliexpress.com/item/4000016739581.html |
-| <img src="https://github.com/playfultechnology/arduino-power/blob/main/images/MP1584EN.png" />| [MP1584EN](https://www.amazon.co.uk/DollaTek-MP1584EN-Step-Down-Adjustable-Converter/dp/B07DJ5HZ7G) | [MP1584](https://www.monolithicpower.com/en/mp1584.html) |  5-16V | 1.25-5V | 3A | 1.5MHz | -------------- | -------------- | Pot adjustment _only_ |  |
-| <img src="https://github.com/playfultechnology/arduino-power/blob/main/images/QSKJ.jpg" />| [QSKJ "Fine"](https://www.aliexpress.com/item/32815170131.html) | [MP2315](https://www.openhacks.com/uploadsproductos/datasheet_77.pdf) |  5-16V | 1.25-5V | 3A |500Khz | | -------------- | -------------- |  |
+| Image | Description | Chipset | Input | Output | Max Current | Switching Frequency |  Pot. Adj. | Fixed Adj. | PCB Mountable | Notes | Link |
+| ----- | ----------- | ------- |------ |------- |------------ | ------------------- | ---------- | ---------- | ------------- | ----- | ---- |
+| <img src="https://github.com/playfultechnology/arduino-power/blob/main/images/CA1235.png" /> | [CA1235 module](https://www.aliexpress.com/item/1005005231661753.html) | [MP1495](https://www.monolithicpower.com/en/mp1495.html) | 5-16V | 1.25-5V | 3A | 500kHz | :white_check_mark:| :white_check_mark: | Adjustable voltage output selectable by pot or solder joints. Can't be PCB mounted. | https://www.aliexpress.com/item/1005005231661753.html |
+| <img src="https://github.com/playfultechnology/arduino-power/blob/main/images/Mini.png" />  | "Mini" | Marked as "DKGAA" | 12-24V* | 1.8-12V | 3A | 500kHz | -------------- | -------------- | Adjustable (need knife to break trace). Amazon reviews say not to exceed 15V input  | https://www.aliexpress.com/item/4000016739581.html |
+| <img src="https://github.com/playfultechnology/arduino-power/blob/main/images/MP1584EN.png" />| [MP1584EN](https://www.amazon.co.uk/DollaTek-MP1584EN-Step-Down-Adjustable-Converter/dp/B07DJ5HZ7G) | [MP1584](https://www.monolithicpower.com/en/mp1584.html) |  4.5-28V | 0.8-20V | 3A | 1.5MHz | :white_check_mark: | :white_large_square: | Pot adjustment _only_ |  |
+| <img src="https://github.com/playfultechnology/arduino-power/blob/main/images/QSKJ.jpg" />| [QSKJ "Fine"](https://www.aliexpress.com/item/32815170131.html) | [MP2315](https://www.openhacks.com/uploadsproductos/datasheet_77.pdf) | 5-16V | 1.25-5V | 3A |500Khz | | -------------- | -------------- |  |
 | | [XL1509](https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_XLSEMI-XL1509-5-0E1_C61063.pdf) |  5-16V | 1.25-5V | 3A | 150kHz |||
 
 
