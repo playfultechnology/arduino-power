@@ -27,4 +27,6 @@ Chipset | Input | Output | Max Current | Switching Frequency | Notes | Circuit |
 | [XL1507-5.0](https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_XLSEMI-XL1507-5-0E1_C74195.pdf) | 54.5-40V | 5V (fixed version) | 3A | 150kHz | More current than above. Available in fixed and adjustable versions. 5000 in stock at LCSC. | <img src="https://github.com/playfultechnology/arduino-power/blob/main/images/XL1507.png" /> |
 | [XL1530](https://crossic.com/wp-content/uploads/2021/12/XL1530-datasheet-English.pdf) | 3.6-18V | 0.8-16V | 3A | 380kHz | 4000 in stock at LCSC| <img src="https://github.com/playfultechnology/arduino-power/blob/main/images/XL1530.png" /> | 
 
-Also see https://blog.yavilevich.com/2017/03/efficient-dc-12v-to-5v-conversion-for-low-power-electronics-evaluation-of-six-modules/
+Also see 
+ - https://blog.yavilevich.com/2017/03/efficient-dc-12v-to-5v-conversion-for-low-power-electronics-evaluation-of-six-modules/
+ - https://discord.com/channels/560138831853125653/687761124728635397/1259447808889589794
