@@ -24,8 +24,13 @@ So, one alternative is to design a custom power subsystem. There's a useful refe
 Chipset | Input | Output | Max Current | Switching Frequency | Notes | Circuit |
 ------- |------ |------- |------------ | ------------------- | ----- | ------- | 
 | [XL1509](https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_XLSEMI-XL1509-5-0E1_C61063.pdf) | 5-16V | 1.25-5V | 2A | 150kHz | Used in Kincony power supply circuitry with relatively few additional components: https://www.kincony.com/kc868-a4-hardware-design-details.html| <img src="https://github.com/playfultechnology/arduino-power/blob/main/images/Kincony-power-subsystem.png" /> |
-| [XL1507-5.0](https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_XLSEMI-XL1507-5-0E1_C74195.pdf) | 54.5-40V | 5V (fixed version) | 3A | 150kHz | More current than above. Available in fixed and adjustable versions. 5000 in stock at LCSC. | <img src="https://github.com/playfultechnology/arduino-power/blob/main/images/XL1507.png" /> |
+| [XL1507-5.0](https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_XLSEMI-XL1507-5-0E1_C74195.pdf) | 4.5-40V | 5V (fixed version) | 3A | 150kHz | More current than above. Available in fixed and adjustable versions. 5000 in stock at LCSC. | <img src="https://github.com/playfultechnology/arduino-power/blob/main/images/XL1507.png" /> |
 | [XL1530](https://crossic.com/wp-content/uploads/2021/12/XL1530-datasheet-English.pdf) | 3.6-18V | 0.8-16V | 3A | 380kHz | 4000 in stock at LCSC| <img src="https://github.com/playfultechnology/arduino-power/blob/main/images/XL1530.png" /> | 
+| Various TI chips, e.g. TPS543320? | | | | | | See https://www.ti.com/lit/sg/slyt729b/slyt729b.pdf?ts=1732728465255 | |
+
+For subsequent stepdown to 3.3V, take 5V output and send through an AMS1117. TPS7A92 is similar to AMS1117 (slightly more expensive at $0.60) but gives you 2A of output current.
+Or, if more current is required, could simply feed to AMS1117 in parallel, as in the design of the [Kincony A64](https://www.kincony.com/kc868-a64-hardware-design-details.html). 
+
 
 Also see 
  - https://blog.yavilevich.com/2017/03/efficient-dc-12v-to-5v-conversion-for-low-power-electronics-evaluation-of-six-modules/
