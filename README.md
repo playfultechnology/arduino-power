@@ -13,19 +13,18 @@ The following table compares various small DC-DC buck convertor modules commonly
 
 [^1]: Higher switching frequency will mean less ripple on the output (more accurate voltage/current) but causes more overhead due to switching, which reduces the efficiency somewhat.
 
-NOTE: These modules are typically based on somewhat old Monolithic Power Systems ICs which are not recommended for new designs.
- - MP1495 (used in "CA1235") and MP1584 are not recommended for new designs [MP2338](https://www.monolithicpower.com/en/mp2338.html) recommended instead.
- - MP2315 (used in "QSKJ Fine") not recommended for new designs. [MP2393](https://www.monolithicpower.com/en/mp2393.html) suggested alternative instead.
+However, all of these modules have flaws of one sort of other:are typically based on somewhat old Monolithic Power Systems ICs which are not recommended for new designs.
+ - MP1495 (used in "CA1235") and MP1584 are both old ICs from Monolithic Power Systems not recommended for new designs. (The [MP2338](https://www.monolithicpower.com/en/mp2338.html) is the recommended alternative instead).
+ - MP2315 (used in "QSKJ Fine") is also not recommended for new designs, with the [MP2393](https://www.monolithicpower.com/en/mp2393.html) suggested alternative instead.
+ - The QSKJ is not usable on a PCB due to the output only having a USB interface, while the CA1235 not usable in a custom PCB design due to its non-standard pin diameter. 
+ - The "Mini" uses a "DKGAA" chip of unknown origin or specs, and it requires manual modification (removing trace to the potentiometer) to make it output a fixed voltage
 
-Additionally, the QSKJ is not usable due ot only having a USB interface, and CA1235 not usable in a custom PCB design due to its non-standard pin diameter. 
-Which leaves "Mini" as the only useful choice from this list, but there is zero available documentation about the "DKGAA" chip it uses.
+So, one alternative is to design a custom power subsystem. There's a useful reference article here: https://medium.com/supplyframe-hardware/designing-power-supplies-that-are-97-efficient-179e8ab887c5  (based on the same MP2315 as the QSKJ Fine, which, as previously mentioned, is not recommended for new designs) 
 
-So, one alternative is to design a custom power subsystem....
-
-Chipset | Input | Output | Max Current | Switching Frequency | Notes |
-------- |------ |------- |------------ | ------------------- | ----- |
-| [XL1509](https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_XLSEMI-XL1509-5-0E1_C61063.pdf) | 5-16V | 1.25-5V | 2A | 150kHz | Used in Kincony power supply circuitry with relatively few additional components: https://www.kincony.com/kc868-a4-hardware-design-details.html|
-
-
+Chipset | Input | Output | Max Current | Switching Frequency | Notes | Circuit |
+------- |------ |------- |------------ | ------------------- | ----- | ------- | 
+| [XL1509](https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_XLSEMI-XL1509-5-0E1_C61063.pdf) | 5-16V | 1.25-5V | 2A | 150kHz | Used in Kincony power supply circuitry with relatively few additional components: https://www.kincony.com/kc868-a4-hardware-design-details.html| <img src="https://github.com/playfultechnology/arduino-power/blob/main/images/Kincony-power-subsystem.png" /> |
+| [XL1507-5.0](https://www.lcsc.com/datasheet/lcsc_datasheet_1811081616_XLSEMI-XL1507-5-0E1_C74195.pdf) | 54.5-40V | 5V (fixed version) | 3A | 150kHz | More current than above. Available in fixed and adjustable versions. 5000 in stock at LCSC. | <img src="https://github.com/playfultechnology/arduino-power/blob/main/images/XL1507.png" /> |
+| [XL1530](https://crossic.com/wp-content/uploads/2021/12/XL1530-datasheet-English.pdf) | 3.6-18V | 0.8-16V | 3A | 380kHz | 4000 in stock at LCSC| <img src="https://github.com/playfultechnology/arduino-power/blob/main/images/XL1530.png" /> | 
 
 Also see https://blog.yavilevich.com/2017/03/efficient-dc-12v-to-5v-conversion-for-low-power-electronics-evaluation-of-six-modules/
