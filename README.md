@@ -29,7 +29,7 @@ Chipset | Input | Output | Max Current | Switching Frequency | Notes | Circuit |
 | Various TI chips, e.g. TPS543320? | | | | | | See https://www.ti.com/lit/sg/slyt729b/slyt729b.pdf?ts=1732728465255 | |
 
 For subsequent stepdown to 3.3V, take 5V output and send through an AMS1117. TPS7A92 is similar to AMS1117 (slightly more expensive at $0.60) but gives you 2A of output current.
-Or, if more current is required, could simply feed to AMS1117 in parallel, as in the design of the [Kincony A64](https://www.kincony.com/kc868-a64-hardware-design-details.html). 
+Or, if more current is required, could use multiple AMS1117, as in the design of the [Kincony A64](https://www.kincony.com/kc868-a64-hardware-design-details.html). Note that the 3.3V output from the two AMS1117 is _not_ combined again to make a single 3.3V rail of greater current though. Some components are powered from one regulator circuit (3V), and some from the other (3V2). 
 
 
 Also see 
